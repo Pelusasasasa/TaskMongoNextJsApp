@@ -13,7 +13,7 @@ const HomePage = async () => {
   return (
     <div className="grid grid-cols-3 gap-2">
       {tasks.map(task => (
-        <TaskCard task={task} />
+        <TaskCard key={task._id} task={task} />
       ))}
     </div>
   )
